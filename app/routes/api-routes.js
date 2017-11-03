@@ -1,0 +1,40 @@
+// *********************************************************************************
+// api-routes.js - this file offers a set of routes for displaying and saving data to the db
+// *********************************************************************************
+
+// Dependencies
+// =============================================================
+var Work = require("../models/work.js");
+
+
+// Routes
+// =============================================================
+module.exports = function(app) {
+
+  // Get all 
+  app.get("/api/all", function(req, res) {
+
+    Work.findAll({}).then(function(results) {
+      // results are available to us inside the .then
+      res.json(results);
+    });
+
+  });
+
+  // Add a workout
+  app.post("/api/new", function(req, res) {
+
+    console.log("Work Data:");
+    console.log(req.body);
+
+    Work.create({
+      weight: req.body.weight,
+      rep: req.body.rep,
+      sets: req.body.sets,
+    }).then(function(results) {
+      res.end();
+    });
+
+  });
+
+};
