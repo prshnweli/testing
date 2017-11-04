@@ -29,7 +29,7 @@ module.exports = function(app) {
 
     Work.create({
       weight: req.body.weight,
-      rep: req.body.rep,
+      reps: req.body.reps,
       sets: req.body.sets,
     }).then(function(results) {
       res.end();

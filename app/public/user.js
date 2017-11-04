@@ -1,44 +1,4 @@
-// var array = []
 
-// $(document).ready(function() {
-
-// $("#submit-btn").on("click", function(e) {
-
-//   event.preventDefault();
-
-//   let muscle = $("#muscle").val().trim()
-//   let workout = $("#workout").val().trim()
-//   let weight = $("#weight").val().trim()
-//   let reps = $("#reps").val().trim()
-//   let sets = $("#sets").val().trim()
-
-
-//   pushToDB(muscle, workout, weight, reps, sets);
-
-//   // Clears all of the text-boxes
-//   $("#muscle").val("");
-//   $("#workout").val("");
-//   $("#weight").val("");
-//   $("#reps").val("");
-//   $("#sets").val("");
-
-//   console.log("click")
-
-// });
-
-// function pushToDB(muscle, workout, weight, reps, sets) {
-
-//   array.push({
-//     "muscle": muscle,
-//     "workout": workout,
-//     "weight": weight, 
-//     "reps": reps, 
-//     "sets": sets, 
-//   });
-
-//   console.log(array)
-// }
-// })
 
 
 function choose() {

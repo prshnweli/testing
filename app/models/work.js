@@ -11,7 +11,7 @@ var Work = sequelize.define("work", {
   weight: {
     type: Sequelize.INTEGER
   },
-  rep: {
+  reps: {
     type: Sequelize.INTEGER
   },
   sets: {
