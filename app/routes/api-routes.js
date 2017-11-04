@@ -28,6 +28,8 @@ module.exports = function(app) {
     console.log(req.body);
 
     Work.create({
+      workoutName: req.body.workoutName,
+      muscle: req.body.muscle,
       weight: req.body.weight,
       reps: req.body.reps,
       sets: req.body.sets,

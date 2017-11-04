@@ -8,6 +8,12 @@ var sequelize = require("../config/connection.js");
 
 // Creates a model that matches up with DB
 var Work = sequelize.define("work", {
+  muscle: {
+    type: Sequelize.STRING
+  },
+  workoutName: {
+    type: Sequelize.STRING
+  },
   weight: {
     type: Sequelize.INTEGER
   },

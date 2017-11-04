@@ -2,35 +2,35 @@
 
 
 function choose() {
-    if (document.getElementById('muscle').value == 'chest') {
-        document.getElementById('chest').style.display = 'block';
+    if (document.getElementById('muscle').value == 'Chest') {
+        document.getElementById('Chest').style.display = 'block';
     } else {
-        document.getElementById('chest').style.display = 'none';
+        document.getElementById('Chest').style.display = 'none';
     }
-    if (document.getElementById('muscle').value == 'back') {
-        document.getElementById('back').style.display = 'block';
+    if (document.getElementById('muscle').value == 'Back') {
+        document.getElementById('Back').style.display = 'block';
     } else {
-        document.getElementById('back').style.display = 'none';
+        document.getElementById('Back').style.display = 'none';
     }
-    if (document.getElementById('muscle').value == 'shoulders') {
-        document.getElementById('shoulders').style.display = 'block';
+    if (document.getElementById('muscle').value == 'Shoulders') {
+        document.getElementById('Shoulders').style.display = 'block';
     } else {
-        document.getElementById('shoulders').style.display = 'none';
+        document.getElementById('Shoulders').style.display = 'none';
     }
-    if (document.getElementById('muscle').value == 'abs') {
-        document.getElementById('abs').style.display = 'block';
+    if (document.getElementById('muscle').value == 'Abs') {
+        document.getElementById('Abs').style.display = 'block';
     } else {
-        document.getElementById('abs').style.display = 'none';
+        document.getElementById('Abs').style.display = 'none';
     }
-    if (document.getElementById('muscle').value == 'arms') {
-        document.getElementById('arms').style.display = 'block';
+    if (document.getElementById('muscle').value == 'Arms') {
+        document.getElementById('Arms').style.display = 'block';
     } else {
-        document.getElementById('arms').style.display = 'none';
+        document.getElementById('Arms').style.display = 'none';
     }
-    if (document.getElementById('muscle').value == 'legs') {
-        document.getElementById('legs').style.display = 'block';
+    if (document.getElementById('muscle').value == 'Legs') {
+        document.getElementById('Legs').style.display = 'block';
     } else {
-        document.getElementById('legs').style.display = 'none';
+        document.getElementById('Legs').style.display = 'none';
     }
 }
 

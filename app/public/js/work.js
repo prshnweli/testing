@@ -5,6 +5,8 @@ $("#submit-btn").on("click", function(event) {
   event.preventDefault();
 
   var newWorkout = {
+    muscle: $("#muscle").val().trim(),
+    workoutName: $(".workoutName").val().trim(),
     weight: $("#weight").val().trim(),
     reps: $("#reps").val().trim(),
     sets: $("#sets").val().trim(),
@@ -19,15 +21,21 @@ $("#submit-btn").on("click", function(event) {
 
       var row = $("<div>");
 
+      row.append("<p> muscle group: " + newWorkout.muscle + "</p>");
+      row.append("<p> Workout name: " + newWorkout.workoutName + "</p>");
       row.append("<p> weight: " + newWorkout.weight + "</p>");
       row.append("<p> reps: " + newWorkout.reps + "</p>");
       row.append("<p> sets: " + newWorkout.sets + "</p>");
+      row.append("<p> --------------- </p>");
 
       $("#work-area").prepend(row); //change location
 
     });
 
   // Empty each input box by replacing the value with an empty string
+  
+  $("#muscle").val("");
+  $(".workoutName").val("");
   $("#weight").val("");
   $("#reps").val("");
   $("#sets").val("");
@@ -41,9 +49,12 @@ $.get("/api/all", function(data) {
 
       var row = $("<div>");
 
-      row.append("<p> weight:" + data[i].weight + "</p>");
-      row.append("<p> reps:" + data[i].reps + "</p>");
-      row.append("<p> sets:" + data[i].sets + "</p>");
+      row.append("<p> muscle group: " + data[i].muscle + "</p>");
+      row.append("<p> workout name: " + data[i].workoutName + "</p>");
+      row.append("<p> weight: " + data[i].weight + "</p>");
+      row.append("<p> reps: " + data[i].reps + "</p>");
+      row.append("<p> sets: " + data[i].sets + "</p>");
+      row.append("<p> --------------- </p>");
 
       $("#work-area").prepend(row); 
 
