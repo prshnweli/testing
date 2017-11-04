@@ -1,12 +1,10 @@
-/* global moment */
 
-// When user clicks add-btn
 $("#submit-btn").on("click", function(event) {
   event.preventDefault();
 
   var newWorkout = {
     muscle: $("#muscle").val().trim(),
-    workoutName: $(".workoutName").val().trim(),
+    workoutName: $("#workoutName").val().trim(),
     weight: $("#weight").val().trim(),
     reps: $("#reps").val().trim(),
     sets: $("#sets").val().trim(),
@@ -14,9 +12,8 @@ $("#submit-btn").on("click", function(event) {
 
   console.log(newWorkout);
 
-  // Send an AJAX POST-request with jQuery
   $.post("/api/new", newWorkout)
-    // On success, run the following code
+    
     .done(function() {
 
       var row = $("<div>");
@@ -28,7 +25,8 @@ $("#submit-btn").on("click", function(event) {
       row.append("<p> sets: " + newWorkout.sets + "</p>");
       row.append("<p> --------------- </p>");
 
-      $("#work-area").prepend(row); //change location
+      $("#work-area").prepend(row);
+      newWorkout = {}; 
 
     });
 

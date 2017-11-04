@@ -32,7 +32,7 @@
       <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
 
-          <select id="muscle" name="category" style="width: 212px;" onclick='choose()'>
+          <select id="muscle" name="category" style="width: 212px;">
             <option value="">-Choose A Body Part-</option>
             <option value="Chest">Chest</option>
             <option value="Back">Back</option>
@@ -42,75 +42,66 @@
             <option value="Abs">Abs</option>
           </select>
 
-          <select class="workoutName" id="Chest" name="items" style="display: none">
-            <option value="">-Choose A Workout-</option>
-            <option value="Flat Bench">Flat Bench</option>
-            <option value="Incline Bench">Incline Bench</option>
-            <option value="Decline Bench">Decline Bench</option>
-            <option value="Flat Bench (free)">Flat Bench (free)</option>
-            <option value="Incline Bench (free)">Incline Bench (free)</option>
-            <option value="Decline Bench (free)">Decline Bench (free)</option>
-            <option value="Dumbell Flys">Dumbell Flys</option>
-            <option value="Cable Flys">Cable Flys</option>
-          </select>
-
-          <select class="workoutName" id="Back" name="items" style="display: none">
-            <option value="">-Choose A Workout-</option>
-            <option value="Deadlift">Deadlift</option>
-            <option value="Pull Ups">Pull Ups</option>
-            <option value="Barbell Rows">Barbell Rows</option>
-            <option value="Dumbell Rows">Dumbell Rows</option>
-            <option value="Pull downs">Pull downs</option>
-            <option value="Machine Rows">Machine Rows</option>
-          </select>
-
-          <select class="workoutName" id="Legs" name="items" style="display: none">
-            <option value="">-Choose A Workout-</option>
-            <option value="Squats">Squats</option>
-            <option value="Split Squats">Split Squats</option>
-            <option value="Leg Press">Leg Press</option>
-            <option value="Calf Raises">Calf Raises</option>
-            <option value="Hamstring Curls">Hamstring Curls</option>
-            <option value="Leg Extensions">Leg Extensions</option>
-          </select>
-
-          <select class="workoutName" id="Shoulders" name="items" style="display: none">
-            <option value="">-Choose A Workout-</option>
-            <option value="Military Press">Military Press</option>
-            <option value="Dumbell Press">Dumbell Press</option>
-            <option value="Lateral Raises">Lateral Raises</option>
-            <option value="Forward Raises">Forward Raises</option>
-            <option value="Rear Delt Flys">Rear Delt Flys</option>
-            <option value="Machine Military Press">Machine Military Press</option>
-            <option value="Upright Rows">Upright Rows</option>
-          </select>
-
-          <select class="workoutName" id="Abs" name="items" style="display: none">
-            <option value="">-Choose A Workout-</option>
-            <option value="Crunches">Crunches</option>
-            <option value="Sit ups">Sit ups</option>
-            <option value="Leg Raises">Leg Raises</option>
-            <option value="Bicycle Kicks">Bicycle Kicks</option>
-            <option value="Flutter Kicks">Flutter Kicks</option>
-            <option value="Russian Twists">Russian Twists</option>
-            <option value="Cable Crunches">Cable Crunches</option>
-          </select>
-
-          <select class="workoutName" id="Arms" name="items" style="display: none">
-            <option value="">-Choose A Workout-</option>
-            <option value="Barbell Curls (Flat)">Barbell Curls (Flat)</option>
-            <option value="Barbell Curls (EZ)">Barbell Curls (EZ)</option>
-            <option value="Dumbell Curls (Flat)">Dumbell Curls (Flat)</option>
-            <option value="Dumbell Curls (Hammer)">Dumbell Curls (Hammer)</option>
-            <option value="Dumbell Curls (Alternate)">Dumbell Curls (Alternate)</option>
-            <option value="Cable Curls (Flat)">Cable Curls (Flat)</option>
-            <option value="Cable Curls (EZ)">Cable Curls (EZ)</option>
-            <option value="Cable Curls (Hammer)">Cable Curls (Hammer)</option>
-            <option value="Tri Extensions">Tri Extensions</option>
-            <option value="Dips">Dips</option>
-            <option value="Close Bench">Close Bench</option>
-            <option value="Skullcrushers (Barbell)">Skullcrushers (Barbell)</option>
-            <option value="Skullcrushers (Dumbell)">Skullcrushers (Dumbell)</option>
+          <select id="workoutName" name="items">
+            
+            <option data-group='Chest' value="Flat Bench">Flat Bench</option>
+            <option data-group='Chest' value="Incline Bench">Incline Bench</option>
+            <option data-group='Chest' value="Decline Bench">Decline Bench</option>
+            <option data-group='Chest' value="Flat Bench (free)">Flat Bench (free)</option>
+            <option data-group='Chest' value="Incline Bench (free)">Incline Bench (free)</option>
+            <option data-group='Chest' value="Decline Bench (free)">Decline Bench (free)</option>
+            <option data-group='Chest' value="Dumbell Flys">Dumbell Flys</option>
+            <option data-group='Chest' value="Cable Flys">Cable Flys</option>
+            <option data-group='Chest' value="">-Choose A Workout-</option>
+            
+            <option data-group='Back' value="Deadlift">Deadlift</option>
+            <option data-group='Back' value="Pull Ups">Pull Ups</option>
+            <option data-group='Back' value="Barbell Rows">Barbell Rows</option>
+            <option data-group='Back' value="Dumbell Rows">Dumbell Rows</option>
+            <option data-group='Back' value="Pull downs">Pull downs</option>
+            <option data-group='Back' value="Machine Rows">Machine Rows</option>
+            <option data-group='Back' value="">-Choose A Workout-</option>
+            
+            <option data-group='Legs' value="Squats">Squats</option>
+            <option data-group='Legs' value="Split Squats">Split Squats</option>
+            <option data-group='Legs' value="Leg Press">Leg Press</option>
+            <option data-group='Legs' value="Calf Raises">Calf Raises</option>
+            <option data-group='Legs' value="Hamstring Curls">Hamstring Curls</option>
+            <option data-group='Legs' value="Leg Extensions">Leg Extensions</option>
+            <option data-group='Legs' value="">-Choose A Workout-</option>
+            
+            <option data-group='Shoulders' value="Military Press">Military Press</option>
+            <option data-group='Shoulders' value="Dumbell Press">Dumbell Press</option>
+            <option data-group='Shoulders' value="Lateral Raises">Lateral Raises</option>
+            <option data-group='Shoulders' value="Forward Raises">Forward Raises</option>
+            <option data-group='Shoulders' value="Rear Delt Flys">Rear Delt Flys</option>
+            <option data-group='Shoulders' value="Machine Military Press">Machine Military Press</option>
+            <option data-group='Shoulders' value="Upright Rows">Upright Rows</option>
+            <option data-group='Shoulders' value="">-Choose A Workout-</option>
+            
+            <option data-group='Abs' value="Crunches">Crunches</option>
+            <option data-group='Abs' value="Sit ups">Sit ups</option>
+            <option data-group='Abs' value="Leg Raises">Leg Raises</option>
+            <option data-group='Abs' value="Bicycle Kicks">Bicycle Kicks</option>
+            <option data-group='Abs' value="Flutter Kicks">Flutter Kicks</option>
+            <option data-group='Abs' value="Russian Twists">Russian Twists</option>
+            <option data-group='Abs' value="Cable Crunches">Cable Crunches</option>
+            <option data-group='Abs' value="">-Choose A Workout-</option>
+            
+            <option data-group='Arms' value="Barbell Curls (Flat)">Barbell Curls (Flat)</option>
+            <option data-group='Arms' value="Barbell Curls (EZ)">Barbell Curls (EZ)</option>
+            <option data-group='Arms' value="Dumbell Curls (Flat)">Dumbell Curls (Flat)</option>
+            <option data-group='Arms' value="Dumbell Curls (Hammer)">Dumbell Curls (Hammer)</option>
+            <option data-group='Arms' value="Dumbell Curls (Alternate)">Dumbell Curls (Alternate)</option>
+            <option data-group='Arms' value="Cable Curls (Flat)">Cable Curls (Flat)</option>
+            <option data-group='Arms' value="Cable Curls (EZ)">Cable Curls (EZ)</option>
+            <option data-group='Arms' value="Cable Curls (Hammer)">Cable Curls (Hammer)</option>
+            <option data-group='Arms' value="Tri Extensions">Tri Extensions</option>
+            <option data-group='Arms' value="Dips">Dips</option>
+            <option data-group='Arms' value="Close Bench">Close Bench</option>
+            <option data-group='Arms' value="Skullcrushers (Barbell)">Skullcrushers (Barbell)</option>
+            <option data-group='Arms' value="Skullcrushers (Dumbell)">Skullcrushers (Dumbell)</option>
+            <option data-group='Arms' value="">-Choose A Workout-</option>
           </select>
           <br>
 
